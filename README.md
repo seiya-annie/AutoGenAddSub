@@ -1,5 +1,6 @@
 # AutoGenAddSub
 Automatically generate addition and subtraction
+
 For example:
 '/AutoGenAddSuB/main.py', '100', '10']
 
