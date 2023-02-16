@@ -1,4 +1,5 @@
 import random
+import sys
 
 def generate_addition_subtraction_problems(max_sum, num_problems):
     problems = []
@@ -14,8 +15,9 @@ def generate_addition_subtraction_problems(max_sum, num_problems):
             problems.append(f"{a} - {b} = ")
     return problems
 
-if __name__ == '__main__':
 
-    results = generate_addition_subtraction_problems(100, 10)
+if __name__ == '__main__':
+    print(sys.argv)
+    results = generate_addition_subtraction_problems(int(sys.argv[1]), int(sys.argv[2]))
     for num in results:
         print(num)
